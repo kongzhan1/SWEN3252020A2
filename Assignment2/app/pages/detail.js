@@ -41,7 +41,7 @@ class detail extends React.Component {
 
 
     /**
-     * This method checks if the identification parameters passed from 'Listing' page
+     * This method checks if the identification parameters passed from 'List' page
      * is arrived successfully.
      */
     checkNoteLoaded = () => {

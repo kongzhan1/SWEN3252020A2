@@ -9,10 +9,10 @@ import { fb, auth, database, storage } from '../../firebaseConfig/config.js';
 /**
  * Main class of the page.
  */
-class listing extends React.Component {
+class list extends React.Component {
 
     /**
-     * Constructor of the class, specifying the empty list of the listing,
+     * Constructor of the class, specifying the empty list of the list,
      * refresh initial state and loggin state.
      * @param {can be used to navigate to this page} props 
      */
@@ -49,7 +49,7 @@ class listing extends React.Component {
 
     /**
      * This is the method that get each instance of the note and retrieves the concret values from 
-     * the note and adds them into the listing.
+     * the note and adds them into the list.
      */
     addToFlatList = (notes, data, photoId) => {
         var origin = this;
@@ -115,7 +115,7 @@ class listing extends React.Component {
                             {/* This is the header title view of this page. */}
                             <View style={{ flexDirection: 'row', hieght: 70, paddingTop: 40, backgroundColor: 'white', borderColor: 'lightgrey', borderBottomWidth: 0.5, justifyContent: 'center', justifyContent: 'space-between', alignItems: 'center' }}>
                                 <Text></Text>
-                                <Text style={{ paddingBottom: 10, paddingLeft: 52, fontSize: 18, fontWeight: 'bold' }}> Listing Notes </Text>
+                                <Text style={{ paddingBottom: 10, paddingLeft: 52, fontSize: 18, fontWeight: 'bold' }}> List Notes </Text>
                                 {/* Touchable plus button to navigate to the new note page. */}
                                 <TouchableOpacity onPress={() => this.props.navigation.navigate('NewNote')}>
                                     <Text style={{ paddingBottom: 5, paddingRight: 20, fontWeight: 'bold', color: 'darkblue' }}> New </Text>
@@ -168,4 +168,4 @@ class listing extends React.Component {
     }
 }
 
-export default listing;
+export default list;

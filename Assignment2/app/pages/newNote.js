@@ -54,7 +54,7 @@ class newNote extends React.Component {
              };
 
              database.ref('/notes/'+noteID).set(noteObj);
-             this.props.navigation.navigate('Listing');
+             this.props.navigation.navigate('List');
          }
     }
 

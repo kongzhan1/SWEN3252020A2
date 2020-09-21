@@ -13,7 +13,7 @@ class login extends React.Component {
 
     /**
      * Constructor of the page, the state stores two input values of the page.
-     * @param {can be used to navigate to this page} props 
+     * @param {can be used to navigate to this page} props
      */
     constructor(props) {
         super(props);
@@ -25,7 +25,7 @@ class login extends React.Component {
 
     /**
      * An async method, which is called when login button clicked. Then this method
-     * will process the login infomation and login the user. 
+     * will process the login infomation and login the user.
      */
     login = async () => {
 
@@ -35,7 +35,7 @@ class login extends React.Component {
             try {
                 let user = await auth.signInWithEmailAndPassword(email, pass);
                 if (user) {
-                    this.props.navigation.navigate('Listing');
+                    this.props.navigation.navigate('List');
                 }
             } catch (error) {
                 alert(error);
@@ -46,7 +46,7 @@ class login extends React.Component {
     }
 
     /**
-     * Render method of the page. 
+     * Render method of the page.
      */
     render() {
         return (
